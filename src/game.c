@@ -20,7 +20,7 @@ int main(int argc, char * argv[])
     init_logger("gf2d.log",0);
     slog("---==== BEGIN ====---");
     gf2d_graphics_initialize(
-        "gf2d",
+        "Project Penguin Battle",
         1200,
         720,
         1200,
