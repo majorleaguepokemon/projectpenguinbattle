@@ -32,10 +32,10 @@ int main(int argc, char * argv[])
     SDL_ShowCursor(SDL_DISABLE);
     
     /*demo setup*/
-    f = gf2d_sprite_load_image("images/sprites/front/bulbasaur.png");
-    fs = gf2d_sprite_load_image("images/sprites/front-shiny/bulbasaur.png");
-    b = gf2d_sprite_load_image("images/sprites/back/bulbasaur.png");
-    bs = gf2d_sprite_load_image("images/sprites/back-shiny/bulbasaur.png");
+    f = gf2d_sprite_load_image("images/sprites/pokemon/front/bulbasaur.png");
+    fs = gf2d_sprite_load_image("images/sprites/pokemon/front-shiny/bulbasaur.png");
+    b = gf2d_sprite_load_image("images/sprites/pokemon/back/bulbasaur.png");
+    bs = gf2d_sprite_load_image("images/sprites/pokemon/back-shiny/bulbasaur.png");
     /*main game loop*/
     while(!done)
     {
