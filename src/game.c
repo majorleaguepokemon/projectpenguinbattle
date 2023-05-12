@@ -29,6 +29,7 @@ int main(int argc, char * argv[])
         0);
     gf2d_graphics_set_frame_delay(16);
     gf2d_sprite_init(1024);
+    gfc_audio_init(128,24,0,64,1,1);
     SDL_ShowCursor(SDL_DISABLE);
     
     /*demo setup*/
@@ -36,6 +37,9 @@ int main(int argc, char * argv[])
     fs = gf2d_sprite_load_image("images/sprites/pokemon/front-shiny/bulbasaur.png");
     b = gf2d_sprite_load_image("images/sprites/pokemon/back/bulbasaur.png");
     bs = gf2d_sprite_load_image("images/sprites/pokemon/back-shiny/bulbasaur.png");
+
+    Sound *bc = gfc_sound_load("audio/cries/bulbasaur.ogg",1,1);
+    gfc_sound_play(bc,0,1,-1,-1);
     /*main game loop*/
     while(!done)
     {
