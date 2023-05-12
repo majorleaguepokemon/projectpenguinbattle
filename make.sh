@@ -29,4 +29,4 @@ echo "compiled"
 
 # Run Project
 cd ..
-./gf2d
+./ppb
